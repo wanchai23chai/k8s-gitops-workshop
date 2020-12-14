@@ -4,7 +4,7 @@ import * as eks from '@pulumi/eks';
 
 const awsConfig = new pulumi.Config('aws');
 
-const profileName = awsConfig.require('');
+const profileName = awsConfig.require('profile');
 
 const vpc = new awsx.ec2.Vpc('k8s-workshop', {
   subnets: [{ type: 'public' }],
