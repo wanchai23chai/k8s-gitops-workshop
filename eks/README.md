@@ -21,8 +21,14 @@ pulumi config set aws:profile k8s-workshop
 Provision cluster IaC via Pulumi CLI.
 
 ```bash
+# select the certain stack
+pulumi stack select k8s-workshop-eks-dev
+
+# provision resources from IaC
 pulumi up
 
+# get the cluster name
+CLUSTER_NAME=$(pulumi stack output clusterName)
 # update cluster config to kubectl
-aws eks update-kubeconfig --name trinity-dev
+aws eks update-kubeconfig --name "${CLUSTER_NAME}"
 ```
