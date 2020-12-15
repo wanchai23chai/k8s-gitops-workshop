@@ -1,17 +1,13 @@
 # prerequisite
 
-Install tools by following `README.md`.
+## Tools
 
-```bash
-brew install kubeseal
+- Install CLIs
 
-curl https://raw.githubusercontent.com/WhatTheFar/kube-secret-encode/master/install.sh | bash -s -- -b ~/go/bin
+## Dependencies
 
-brew install pulumi
-```
+- Install node packages
 
-Install `node_modules` for IaC.
+## AWS CLI
 
-```bash
-npm install
-```
+- Set AWS credentials using profile named `k8s-workshop`
