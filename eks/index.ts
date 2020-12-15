@@ -20,9 +20,9 @@ const cluster = new eks.Cluster('k8s-workshop', {
   vpcId: vpc.id,
   subnetIds: vpc.publicSubnetIds,
   instanceType: 't3.small',
-  desiredCapacity: 2,
-  minSize: 2,
-  maxSize: 2,
+  desiredCapacity: 1,
+  minSize: 1,
+  maxSize: 1,
   name: `k8s-workshop${postfix}`,
   providerCredentialOpts: {
     profileName,
