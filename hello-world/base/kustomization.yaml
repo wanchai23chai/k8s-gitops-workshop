@@ -1,0 +1,30 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+# namespace to deploy all Resources to
+namespace: hello-world
+
+resources:
+  - api-gateway/deployment.yaml
+  - api-gateway/service.yaml
+  - calculator/deployment.yaml
+  - calculator/service.yaml
+
+vars:
+  # Name of the variable so it can be referenced
+  - name: CALCULATOR_SVC
+    # GVK of the object with the field
+    objref:
+      kind: Service
+      name: calculator
+      apiVersion: v1
+    # Path to the field
+    fieldref:
+      fieldpath: metadata.name
+  - name: CALCULATOR_SVC_NS
+    objref:
+      kind: Service
+      name: calculator
+      apiVersion: v1
+    fieldref:
+      fieldpath: metadata.namespace
