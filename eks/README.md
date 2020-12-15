@@ -14,6 +14,9 @@ Configure the stack.
 ```bash
 pulumi config set aws:region ap-southeast-1
 pulumi config set aws:profile k8s-workshop
+
+EMAIL=<REPLACE YOUR EMAIL HERE>
+pulumi confgi set postfix $EMAIL
 ```
 
 ## Provision
