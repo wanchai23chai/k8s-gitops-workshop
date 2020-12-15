@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: git@github.com:SCGWEDOtech/k8s-gitops-workshop.git
     targetRevision: HEAD
-    path: hello-world/dev/ap-southeast-1
+    path: hello-world/overlays/dev/ap-southeast-1
 
   # Destination cluster and namespace to deploy the application
   destination:
