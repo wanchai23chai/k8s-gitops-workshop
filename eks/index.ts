@@ -9,11 +9,11 @@ const postfix = '-' + config.require('postfix');
 const profileName = awsConfig.require('profile');
 
 const vpc = awsx.ec2.Vpc.fromExistingIds('k8s-gitops-workshop', {
-  vpcId: 'vpc-06f37a6378148dbbb',
+  vpcId: 'vpc-0744bad5197560d1e',
   publicSubnetIds: [
-    'subnet-01f65e690c80befda',
-    'subnet-0983985b2244a393f',
-    'subnet-04575bd031fed47d6',
+    'subnet-03d850ae277874509',
+    'subnet-0122e073dba3547f7',
+    'subnet-044e99267b4119224',
   ],
 });
 
