@@ -8,7 +8,7 @@ const awsConfig = new pulumi.Config('aws');
 const postfix = '-' + config.require('postfix');
 const profileName = awsConfig.require('profile');
 
-const vpc = awsx.ec2.Vpc.fromExistingIds('k8s-workshop', {
+const vpc = awsx.ec2.Vpc.fromExistingIds('k8s-gitops-workshop', {
   vpcId: 'vpc-06f37a6378148dbbb',
   publicSubnetIds: [
     'subnet-01f65e690c80befda',
@@ -17,14 +17,14 @@ const vpc = awsx.ec2.Vpc.fromExistingIds('k8s-workshop', {
   ],
 });
 
-const cluster = new eks.Cluster('k8s-workshop', {
+const cluster = new eks.Cluster('k8s-gitops-workshop', {
   vpcId: vpc.id,
   subnetIds: vpc.publicSubnetIds,
   instanceType: 't3.small',
   desiredCapacity: 1,
   minSize: 1,
   maxSize: 1,
-  name: `k8s-workshop${postfix}`,
+  name: `k8s-gitops-workshop${postfix}`,
   providerCredentialOpts: {
     profileName,
   },

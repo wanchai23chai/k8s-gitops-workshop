@@ -22,7 +22,7 @@
 ### 3
 
 ```bash
-# save the key at ~/.ssh/k8s-workshop
+# save the key at ~/.ssh/k8s-gitops-workshop
 # and enter empty passphrase
 ssh-keygen -t ed25519 -C "jakpat.m@gmail.com"
 ```

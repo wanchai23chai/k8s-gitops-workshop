@@ -1,11 +1,11 @@
 import * as aws from '@pulumi/aws';
 import * as awsx from '@pulumi/awsx';
 
-const vpc = new awsx.ec2.Vpc('k8s-workshop', {
+const vpc = new awsx.ec2.Vpc('k8s-gitops-workshop', {
   subnets: [{ type: 'public' }],
   numberOfAvailabilityZones: 'all',
   tags: {
-    Name: 'k8s-workshop',
+    Name: 'k8s-gitops-workshop',
   },
 });
 

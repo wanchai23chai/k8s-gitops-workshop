@@ -10,4 +10,4 @@
 
 ## AWS CLI
 
-- Set AWS credentials using profile named `k8s-workshop`
+- Set AWS credentials using profile named `k8s-gitops-workshop`
