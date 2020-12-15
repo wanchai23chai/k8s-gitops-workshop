@@ -15,8 +15,10 @@ Configure the stack.
 pulumi config set aws:region ap-southeast-1
 pulumi config set aws:profile k8s-workshop
 
-EMAIL=<REPLACE YOUR EMAIL HERE>
-pulumi config set postfix $EMAIL
+# For example:
+#   FULL_NAME=jakpat-mingmongkolmitr
+FULL_NAME=<REPLACE YOUR FULL NAME>
+pulumi config set postfix $FULL_NAME
 ```
 
 ## Provision
