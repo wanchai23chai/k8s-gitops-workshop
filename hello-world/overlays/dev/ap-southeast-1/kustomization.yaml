@@ -10,3 +10,7 @@ commonLabels:
 
 resources:
 - ../base
+images:
+- name: calculator
+  newName: 102805137764.dkr.ecr.ap-southeast-1.amazonaws.com/k8s-gitops-workshop-calculator
+  newTag: v0.0.1
