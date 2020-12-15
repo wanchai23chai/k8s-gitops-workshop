@@ -98,10 +98,8 @@ Follow https://github.com/bitnami-labs/sealed-secrets/releases for installation
 
 ### kube-secret-encode
 
-> Note: Ensure you have `~/go/bin` in your $PATH. If you don't, run `echo "export PATH=\"\$GOPATH/bin:\$PATH\"" >> ~/.bashrc`.
-
 ```bash
-curl https://raw.githubusercontent.com/WhatTheFar/kube-secret-encode/master/install.sh | bash -s -- -b ~/go/bin
+No installation needed for Cloud9
 ```
 
 ### kustomize
