@@ -16,7 +16,6 @@ using `kubeseal`.
 
 ```bash
 cat repository-secret.yaml \
-    | kube-secret-encode \
     | kubeseal --format yaml \
     > repository-secret.sealed.yaml
 ```

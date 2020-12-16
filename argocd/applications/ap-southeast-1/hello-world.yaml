@@ -13,7 +13,7 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: git@github.com:SCGWEDOtech/k8s-gitops-workshop.git
+    repoURL: git@github.com:wanchai23chai/k8s-gitops-workshop.git
     targetRevision: HEAD
     path: hello-world/overlays/dev/ap-southeast-1
 

@@ -7,4 +7,3 @@ resources:
   - argocd-cm.yaml
   - argocd-ssh-known-hosts-cm.yaml
   - repository-secret.sealed.yaml
-  - networking.yaml
