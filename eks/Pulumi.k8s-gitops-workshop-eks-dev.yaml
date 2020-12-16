@@ -1,0 +1,5 @@
+encryptionsalt: v1:DcjfJtj/qLo=:v1:sB/m2WXrnNxseIGh:IoES4FGJ9vmeFXIHWSMn+/rjfSvZ7g==
+config:
+  aws:profile: k8s-gitops-workshop
+  aws:region: ap-southeast-1
+  eks:postfix: WANCHAI_NUPINIT
